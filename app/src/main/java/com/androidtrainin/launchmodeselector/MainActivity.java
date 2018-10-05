@@ -33,9 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btnSingleInstance:
                 currentPackage = "com.androidtrainin.singleinstancelaunchmode";
                 break;
-            case R.id.btnIntentFlags:
-                currentPackage = "com.androidtrainin.intentflagslaunchmode";
-                break;
         }
 
         Intent launchIntent = getPackageManager().getLaunchIntentForPackage(currentPackage);
